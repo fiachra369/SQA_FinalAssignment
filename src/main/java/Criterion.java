@@ -19,6 +19,7 @@ public class Criterion {
         return title;
     }
 
+
     public ArrayList<Integer> getScore() {
         return score;
     }

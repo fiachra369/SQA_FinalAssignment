@@ -70,6 +70,7 @@ public class Controller {
                 System.out.print("Score must be between 0-5, Please enter again: ");
                 score = scan.nextInt();
             }
+
             student.addCriteria(score, 3); // Documentation
 
             studentGradesRubric.addCriterion(student);

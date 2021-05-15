@@ -16,6 +16,8 @@ public class Rubric {
         this.categories = new ArrayList<String>();
     }
 
+
+
     public void addCriterion(String title) {
         if (this.criterionList.size() >= MAX_CRITERIA)
             System.out.println("Criteria limit exceeded");
