@@ -84,5 +84,10 @@ public class Controller {
             studentGradesRubric.printRubric();
         System.out.println();
 
+        System.out.println("Get rubric by student Name : ");
+        String name = scan.nextLine();
+        studentGradesRubric.getSpecificRubricByName(name);
+        System.out.println();
+
     }
 }

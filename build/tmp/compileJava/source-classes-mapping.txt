@@ -1,6 +1,6 @@
-Rubric.java
- Rubric
 Criterion.java
  Criterion
+Rubric.java
+ Rubric
 Controller.java
  Controller

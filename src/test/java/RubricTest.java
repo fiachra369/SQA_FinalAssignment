@@ -59,6 +59,11 @@ public class RubricTest {
         Assertions.assertDoesNotThrow(() -> rubric.getAllRubric());
     }
 
+    @Test
+    public void testGetSpecificRubricByName(){
+        Assertions.assertDoesNotThrow(() -> rubric.getSpecificRubricByName("sampleCriterion1"));
+    }
+
     private void createMockCriterion(Rubric rubric) {
         ArrayList<Criterion> criterionList = new ArrayList<>();
         Criterion criterion1 = new Criterion("sampleCriterion1");

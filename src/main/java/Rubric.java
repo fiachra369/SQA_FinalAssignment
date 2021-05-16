@@ -57,6 +57,10 @@ public class Rubric {
         return list;
     }
 
+    public void getAllRubric() {
+        printRubric();
+    }
+
     public void printRubric() {
         System.out.println("\n\t\t\t------========== " + this.rubricName + " ==========------\n");
         for (String c : categories) {
@@ -72,8 +76,29 @@ public class Rubric {
         }
     }
 
-    public void getAllRubric() {
-        printRubric();
+
+
+    public void getSpecificRubricByName(String name) {
+        boolean found = false;
+        System.out.println("\n\t\t\t------========== " + this.rubricName + " ==========------\n");
+        System.out.print("\t\t");
+        for (String c : categories)
+            System.out.print("           " + c + "");
+        System.out.println();
+        for (Criterion cr : criterionList) {
+            if (cr.getTitle().equals(name)) {
+                System.out.print(cr.getTitle() + "\t");
+                for (int i = 0; i < categories.size(); i++) {
+                    System.out.print("            " + cr.getScore().get(i) + "\t\t");
+                }
+                System.out.println();
+                found = true;
+            }
+        }
+
+        if (!found)
+            System.out.println("Student with name " + name + " not found.");
+
     }
 
     public void addCategory(String name) {
