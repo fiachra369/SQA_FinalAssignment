@@ -39,6 +39,13 @@ public class RubricTest {
         Assertions.assertEquals(24, min);
     }
 
+    // This Test Case is for getting the Minimum Score from all the scores of a particular category
+    @Test
+    public void testGetMinimum(){
+        int min = rubric.getMinimum(0);
+        Assertions.assertEquals(10, min);
+    }
+
     // This Test Case is for setting and getting the Rubric Title
     @Test
     public void testRubricName(){

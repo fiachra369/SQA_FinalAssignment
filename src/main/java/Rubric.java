@@ -39,6 +39,14 @@ public class Rubric {
         return list.get(list.size() - 1);
     }
 
+
+    // For specific category
+    public int getMinimum(int index) {
+        ArrayList<Integer> list = getParticularCategoryList(index);
+        Collections.sort(list);
+        return list.get(0);
+    }
+
     public ArrayList<Integer> getParticularCategoryList(int index) {
         ArrayList<Integer> list = new ArrayList<Integer>();
 
