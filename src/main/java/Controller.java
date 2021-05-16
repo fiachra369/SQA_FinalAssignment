@@ -76,5 +76,13 @@ public class Controller {
             studentGradesRubric.addCriterion(student);
             scan.nextLine();
         }
+
+        option = "";
+        System.out.println("Do you want to print all rubrics? Yes or no");
+        option = scan.nextLine();
+        if (option.equalsIgnoreCase("yes"))
+            studentGradesRubric.printRubric();
+        System.out.println();
+
     }
 }

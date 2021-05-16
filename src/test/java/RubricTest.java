@@ -53,6 +53,12 @@ public class RubricTest {
         Assertions.assertEquals("sampleUpdatedRubric", rubric.getRubricName());
     }
 
+    // This Test Case is printing All Rubric Details
+    @Test
+    public void testGetAllRubric(){
+        Assertions.assertDoesNotThrow(() -> rubric.getAllRubric());
+    }
+
     private void createMockCriterion(Rubric rubric) {
         ArrayList<Criterion> criterionList = new ArrayList<>();
         Criterion criterion1 = new Criterion("sampleCriterion1");

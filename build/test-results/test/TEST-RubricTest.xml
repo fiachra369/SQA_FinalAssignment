@@ -1,10 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="RubricTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2021-05-15T09:44:01" hostname="Your-MacBook-Air.local" time="0.092">
+<testsuite name="RubricTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2021-05-16T08:21:23" hostname="Your-MacBook-Air.local" time="0.442">
   <properties/>
-  <testcase name="testAddCriterion_VALUE()" classname="RubricTest" time="0.068"/>
-  <testcase name="testAddCriterion_OBJECT()" classname="RubricTest" time="0.004"/>
-  <testcase name="testGetMaximum()" classname="RubricTest" time="0.005"/>
-  <testcase name="testRubricName()" classname="RubricTest" time="0.008"/>
-  <system-out><![CDATA[]]></system-out>
+  <testcase name="testAddCriterion_VALUE()" classname="RubricTest" time="0.151"/>
+  <testcase name="testGetAllRubric()" classname="RubricTest" time="0.092"/>
+  <testcase name="testAddCriterion_OBJECT()" classname="RubricTest" time="0.028"/>
+  <testcase name="testGetMaximum()" classname="RubricTest" time="0.013"/>
+  <testcase name="testGetMinimum()" classname="RubricTest" time="0.011"/>
+  <testcase name="testRubricName()" classname="RubricTest" time="0.045"/>
+  <system-out><![CDATA[
+			------========== sampleRubric ==========------
+
+sampleCategory1 - 
+sampleCriterion1 - 10 - 
+sampleCriterion2 - 24 - 
+]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

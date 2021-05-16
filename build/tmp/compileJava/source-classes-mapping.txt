@@ -1,6 +1,6 @@
-Criterion.java
- Criterion
 Rubric.java
  Rubric
+Criterion.java
+ Criterion
 Controller.java
  Controller

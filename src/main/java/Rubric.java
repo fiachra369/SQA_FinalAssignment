@@ -57,6 +57,25 @@ public class Rubric {
         return list;
     }
 
+    public void printRubric() {
+        System.out.println("\n\t\t\t------========== " + this.rubricName + " ==========------\n");
+        for (String c : categories) {
+            System.out.print(c + " - ");
+        }
+        System.out.println();
+        for (Criterion cr : criterionList) {
+            System.out.print(cr.getTitle() + " - ");
+            for (int i = 0; i < categories.size(); i++) {
+                System.out.print(cr.getScore().get(i) + " - ");
+            }
+            System.out.println();
+        }
+    }
+
+    public void getAllRubric() {
+        printRubric();
+    }
+
     public void addCategory(String name) {
         this.categories.add(name);
     }
