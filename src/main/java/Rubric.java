@@ -19,6 +19,41 @@ public class Rubric {
         this.categories = new ArrayList<String>();
     }
 
+    // For specific category
+    public String getAverage(int index) {
+        double sum = 0;
+        ArrayList<Integer> list = getParticularCategoryList(index);
+        for (int i = 0; i < list.size(); i++) {
+            sum += list.get(i);
+        }
+
+        double average = sum / list.size();
+        return df.format(average);
+    }
+
+    // For specific category
+    public String getStd(int index) {
+
+        ArrayList<Integer> list = getParticularCategoryList(index);
+        if (list.size() == 0)
+            return "0";
+
+        double sum = 0;
+
+        for (int i = 0; i < list.size(); i++) {
+            sum += list.get(i);
+        }
+
+        double mean = sum / list.size();
+
+        for (int i = 0; i < list.size(); i++) {
+            sum = sum + (list.get(i) - mean) * (list.get(i) - mean);
+        }
+        double squaredDiffMean = (sum) / (list.size());
+        double standardDev = (Math.sqrt(squaredDiffMean));
+
+        return df.format(standardDev);
+    }
 
 
     public void addCriterion(String title) {
@@ -157,6 +192,57 @@ public class Rubric {
         } else {
             System.out.println("Student with name " + name + " not found.");
         }
+    }
+
+    public void printRubricForParticularColumn(String column) {
+        System.out.println(
+                "\n\t\t\t------========== " + this.rubricName + " For Column " + column + " Only ==========------\n");
+        int p = -1;
+        int k = 0;
+        for (String c : categories) {
+            System.out.print(c + " - ");
+            if (c.equals(column))
+                p = k;
+            k++;
+        }
+        System.out.println();
+        for (Criterion cr : criterionList) {
+            System.out.print(cr.getTitle() + " - ");
+            for (int i = 0; i < categories.size(); i++) {
+                System.out.print(cr.getScore().get(i) + " - ");
+            }
+            System.out.println();
+        }
+
+        System.out.println();
+        System.out.print("Std Deviation"+ " - ");
+        for (int i = 0; i < categories.size(); i++) {
+            if (i == p)
+                System.out.print(getStd(i) + " - ");
+        }
+        System.out.println();
+
+        System.out.print("Mean / Average" + " - ");
+        for (int i = 0; i < categories.size(); i++) {
+            if (i == p)
+                System.out.print(getAverage(i) + " - ");
+        }
+        System.out.println();
+
+        System.out.print("Minimum" + " - ");
+        for (int i = 0; i < categories.size(); i++) {
+            if (i == p)
+                System.out.print(getMinimum(i) + " - ");
+        }
+        System.out.println();
+
+        System.out.print("Maximum" + " - ");
+        for (int i = 0; i < categories.size(); i++) {
+            if (i == p)
+                System.out.print(getMaximum(i) + " - ");
+        }
+        System.out.println();
+
     }
 
     public String getRubricName() {

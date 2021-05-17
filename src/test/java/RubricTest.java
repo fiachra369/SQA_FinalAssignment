@@ -76,6 +76,11 @@ public class RubricTest {
         Assertions.assertDoesNotThrow(() -> rubric.printAllStatsPerStudent("sampleCriterion3"));
     }
 
+    @Test
+    public void testPrintRubricForParticularColumn(){
+        Assertions.assertDoesNotThrow(() -> rubric.printRubricForParticularColumn("sampleCategory1"));
+    }
+
     private void createMockCriterion(Rubric rubric) {
         ArrayList<Criterion> criterionList = new ArrayList<>();
         Criterion criterion1 = new Criterion("sampleCriterion1");
