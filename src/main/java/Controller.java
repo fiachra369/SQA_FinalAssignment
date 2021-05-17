@@ -89,5 +89,12 @@ public class Controller {
         studentGradesRubric.getSpecificRubricByName(name);
         System.out.println();
 
+        name = "";
+        System.out.println(
+                "Get average, standard deviation, minimum and maximum score by student Name, Enter Student Name : ");
+        name = scan.nextLine();
+        studentGradesRubric.printAllStatsPerStudent(name);
+        System.out.println();
+
     }
 }

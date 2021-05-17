@@ -64,6 +64,18 @@ public class RubricTest {
         Assertions.assertDoesNotThrow(() -> rubric.getSpecificRubricByName("sampleCriterion1"));
     }
 
+    // This Test Case is printing All Stats of a particular Student
+    @Test
+    public void testPrintAllStatsPerStudent(){
+        Assertions.assertDoesNotThrow(() -> rubric.printAllStatsPerStudent("sampleCriterion1"));
+    }
+
+    // This Test Case is printing All Stats of a particular Student when Student does not exist
+    @Test
+    public void testPrintAllStatsPerStudent_NOT_FOUND(){
+        Assertions.assertDoesNotThrow(() -> rubric.printAllStatsPerStudent("sampleCriterion3"));
+    }
+
     private void createMockCriterion(Rubric rubric) {
         ArrayList<Criterion> criterionList = new ArrayList<>();
         Criterion criterion1 = new Criterion("sampleCriterion1");

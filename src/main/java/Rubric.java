@@ -1,3 +1,4 @@
+import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.Collections;
 
@@ -6,6 +7,8 @@ public class Rubric {
     private String rubricName;
     private ArrayList<Criterion> criterionList;
     private ArrayList<String> categories;
+    private static final DecimalFormat df = new DecimalFormat("#.##");
+
 
     private static final int MAX_CRITERIA = 10;
 
@@ -101,8 +104,59 @@ public class Rubric {
 
     }
 
-    public void addCategory(String name) {
+
+        public void addCategory(String name) {
         this.categories.add(name);
+    }
+
+    public void printAllStatsPerStudent(String name) {
+        boolean found = false;
+        ArrayList<Integer> list = new ArrayList<Integer>();
+        for (Criterion cr : criterionList) {
+            if (cr.getTitle().equals(name)) {
+                for (int i = 0; i < categories.size(); i++) {
+                    list.add(cr.getScore().get(i));
+                }
+                found = true;
+            }
+        }
+
+        if (found) {
+
+            Collections.sort(list);
+            int minimum = list.get(0);
+            int maximum = list.get(list.size() - 1);
+
+            double sum = 0;
+            for (int i = 0; i < list.size(); i++) {
+                sum += list.get(i);
+            }
+            double average = sum / list.size();
+
+            double standardDev = 0;
+            if (list.size() != 0) {
+                sum = 0;
+
+                for (int i = 0; i < list.size(); i++) {
+                    sum += list.get(i);
+                }
+
+                double mean = sum / list.size();
+
+                for (int i = 0; i < list.size(); i++) {
+                    sum = sum + (list.get(i) - mean) * (list.get(i) - mean);
+                }
+                double squaredDiffMean = (sum) / (list.size());
+                standardDev = (Math.sqrt(squaredDiffMean));
+
+                System.out.println("Std: " + df.format(standardDev));
+                System.out.println("Average: " + df.format(average));
+                System.out.println("Minimum: " + minimum);
+                System.out.println("Maximum: " + maximum);
+            }
+        } else {
+            System.out.println("Student with name " + name + " not found.");
+        }
     }
 
     public String getRubricName() {
