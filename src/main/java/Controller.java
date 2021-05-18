@@ -4,7 +4,7 @@ public class Controller {
 
     Scanner scan;
 
-    public Controller() {
+    public Controller(){
         scan = new Scanner(System.in);
     }
 
@@ -13,7 +13,7 @@ public class Controller {
         controller.runner();
     }
 
-    public void runner() {
+    public void runner(){
 
         System.out.println("Would you like to add rubric? Yes or no");
         String option = scan.nextLine();
@@ -70,7 +70,6 @@ public class Controller {
                 System.out.print("Score must be between 0-5, Please enter again: ");
                 score = scan.nextInt();
             }
-
             student.addCriteria(score, 3); // Documentation
 
             studentGradesRubric.addCriterion(student);
@@ -104,4 +103,5 @@ public class Controller {
         System.out.println();
 
     }
+
 }
