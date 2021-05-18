@@ -1,11 +1,17 @@
-
-2			------========== sampleRubric ==========------
-
-sampleCategory1 - 
-sampleCriterion1 - 10 - 
-sampleCriterion2 - 24 - 
+.Student with name sampleCriterion3 not found.
+
+Std: 3.16
+Average: 10
+Minimum: 10
+Maximum: 10
 
 2			------========== sampleRubric ==========------
 
-		           sampleCategory1
-"sampleCriterion1	            10		
+sampleCategory1 - 
+sampleCriterion1 - 10 - 
+sampleCriterion2 - 24 - 
+
+2			------========== sampleRubric ==========------
+
+		           sampleCategory1
+"sampleCriterion1	            10		
