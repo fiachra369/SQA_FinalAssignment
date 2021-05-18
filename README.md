@@ -68,7 +68,7 @@ For this task I gave an estimation of 2 as I believe it is a simple task. All th
 For this task I have given an estimate of 8 as I believe it is a complex task. This task will require if
 statements and loops and will require some arithmetic which will take some time to figure out.
 
-**Velocity Metric:**
+## Velocity Metric
 
 The fibonacci sequence is used when calculating the velocity metric at the end of each sprint. Velocity is calculated at the end of
 the Sprint by totaling the Points for all fully completed User Stories. For example, if Create Student and Grade Student are completed, the total
