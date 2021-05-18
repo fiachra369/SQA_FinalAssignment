@@ -243,8 +243,20 @@ that it covers every aspect of your code.
 
 **Example**
 
+Here is an example ![Getting Started](https://i.postimg.cc/y8JtMssW/Screenshot-2021-05-18-at-14-46-10.png)
 
+* **Design:** The code is well designed.
 
+* **Functionality:** The code is supposed to get the minimum and max for a score
+
+* **Tests:** Thus, I created a min for the score test ![Getting Started](https://i.postimg.cc/wMCL3XyC/Screenshot-2021-05-18-at-14-49-01.png)
+
+* **Naming:** I looked at the names of the variables and methods to see if they matched their functions. The naming in this pull request is good because I understand what each variable means and what each class does.
+
+* **Complexity:** Since the task is straightforward, there is no need for complicated code, and the author avoided adding unnecessary complexity to the code.  
+
+* **Relevancy:** The author hasn't included any extra features that are not required for this task
+  
 
 
 
