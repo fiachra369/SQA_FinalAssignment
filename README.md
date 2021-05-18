@@ -185,20 +185,26 @@ go back in time and remember specific versions.
 
 **Master Branch**
 
-The master division is the project's main branch. This is where you'll find all of the production-ready code.
+The master division is the project's main branch. This is where you'll find all the production-ready code.
+
+To see an example of the master branch [Click here](https://github.com/fiachra369/SQA_FinalAssignment/tree/master)
 
 **Develop branch**
 
-This branch contains the full history of the project's work. Since the build branch is the most recent version of the code, 
+This branch contains the full history of the project's work. Since the build branch is the most recent version of the code,
 it is used to construct all function branches in this project.
-All improvements should be merged back into master until the code in the develop 
+All improvements should be merged back into master until the code in the develop
 branch has reached a stable state and is ready to be published.
+
+To see an example of the develop branch [Click here](https://github.com/fiachra369/SQA_FinalAssignment/tree/develop)
 
 **Feature Branches**
 
 Each new functionality should be assigned to its own branch, which can then be moved to the central repository for backup and collaboration.
 Feature branches should never branch off of master; instead, they should parent off of the parent branch.
 When a function is finished, it is integrated back into the build branch.
+
+To see the develop branch [Click here](https://github.com/fiachra369/SQA_FinalAssignment/tree/feature/ControllerTesting)
 
 
 
