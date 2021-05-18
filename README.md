@@ -102,6 +102,63 @@ According to my calculation, the velocity for these 3 sprints is 6.3.
 To help visualize this, I have attached an image below which depicts a typical 3 sprint with a velocity metric.
 
 ![alt text](https://www.visual-paradigm.com/servlet/editor-content/scrum/what-is-scrum-velocity/sites/7/2018/11/scrum-verlocity-chart.png "`Velocity Example`")
-   
-   
+
+## Test Driven Development
+
+Test-driven development (TDD) is a programming technique that requires you to write a test that fails before writing 
+new functional code. Five basic steps make up the test-driven development 
+cycle, which are replicated during the software development life cycle. These measures are designed 
+to ensure that the code is clear and functional while also meeting all of the specifications.  
+
+**There are 5 different stages to TDD:**
+
+1. Add a test
+2. Run all tests and see if any new test fails
+3. Write some code
+4. Run tests and Refactor code
+5. Repeat
+
+**Here are some of the benefits of TDD:**
+
+*TDD helps you create trust in your system by ensuring that it meets the specifications that have been specified for it. 
+*You pass the coverage test with a score of 100 percent.
+
+**Common Errors in Test Driver Development:**
+
+* Frequently forgetting to run tests.
+* Trying to write so many tests at once.
+* Creating checks for simple code
+* There are only a few developers on the team who use TDD; everyone else should.
+* The test suite isn't kept up to date.
+
+## Test Coverage Metric
+
+Test coverage is a Black-box testing technique that measures the number of tests that have been run. Test cases are written to ensure that all requirements are covered to the fullest extent possible.
+The test coverage report gives details on which sections of the program are covered by test coverage.
+It essentially offers details about the tests that have been run inside an application.
+
+**How to perform Test coverage:**
+
+Different forms of testing may also be used to assess research coverage. The type of testing you do is determined by the application.
+I used unit tests in the sample software. I developed this software using the IntelliJ IDE, 
+which includes a test coverage method that I used.
+
+**How to use IntelliJ's Test Coverage Tool:**
+
+**Step 1:** Go to the class which you would like to test
+
+![Getting Started](https://i.postimg.cc/pybzyVNq/Screenshot-2021-05-18-at-13-08-58.png)
+
+
+**Step 2:** Go to the side and click the play button beside the main method and "Run with coverage"
+
+![Getting Started](https://i.postimg.cc/w1hS8jdZ/Screenshot-2021-05-18-at-13-09-23.png)
+
+
+**Step 3:** The Test Coverage Tool will then be shown to you. You can see all of the project's classes here.
+The tool tells you if you've covered the class, how many approaches you've covered, and how many lines you've covered.
+
+![Getting Started](https://i.postimg.cc/JGHfxQY1/Screenshot-2021-05-18-at-13-12-16.png)
+
+
    

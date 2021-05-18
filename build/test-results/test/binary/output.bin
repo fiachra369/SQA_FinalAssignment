@@ -1,84 +1,28 @@
-(Would you like to add rubric? Yes or no
-(Would you like to add rubric? Yes or no
-&Do you want to add student? Yes or no
-,Do you want to print all rubrics? Yes or no
-
-Get rubric by student Name : 
-
-;			------========== Student Grades Rubric ==========------
-
-W		           Design           Implementation           Testing           Documentation
- Student with name no not found.
-
-bGet average, standard deviation, minimum and maximum score by student Name, Enter Student Name : 
- Student with name no not found.
-
-cGet average, standard deviation, minimum and maximum for a particular column, Enter column Name : 
-
-N			------========== Student Grades Rubric For Column no Only ==========------
-
-5Design - Implementation - Testing - Documentation - 
-
-Std Deviation - 
-Mean / Average - 
-Minimum - 
-Maximum - 
-
-(Would you like to add rubric? Yes or no
-&Do you want to add student? Yes or no
-ðWhat is the student name? What is the design score?Score must be between 0-5, Please enter again: What is the Implementation score?Score must be between 0-5, Please enter again: What is the Testing score?Score must be between 0-5, Please enter again: What is the Documentation score?Score must be between 0-5, Please enter again: Do you want to add student? Yes or no
-,Do you want to print all rubrics? Yes or no
-
-Get rubric by student Name : 
-
-;			------========== Student Grades Rubric ==========------
-
-W		           Design           Implementation           Testing           Documentation
- Student with name no not found.
-
-bGet average, standard deviation, minimum and maximum score by student Name, Enter Student Name : 
- Student with name no not found.
-
-cGet average, standard deviation, minimum and maximum for a particular column, Enter column Name : 
-
-N			------========== Student Grades Rubric For Column no Only ==========------
-
-5Design - Implementation - Testing - Documentation - 
-!sampleStudent - 3 - 5 - 4 - 5 - 
-
-Std Deviation - 
-Mean / Average - 
-Minimum - 
-Maximum - 
-
-(Would you like to add rubric? Yes or no
-&Do you want to add student? Yes or no
-´What is the student name? What is the design score?What is the Implementation score?What is the Testing score?What is the Documentation score?Do you want to add student? Yes or no
-,Do you want to print all rubrics? Yes or no
-
-Get rubric by student Name : 
-
-;			------========== Student Grades Rubric ==========------
-
-W		           Design           Implementation           Testing           Documentation
-KsampleStudent	            3		            5		            4		            5		
-
-bGet average, standard deviation, minimum and maximum score by student Name, Enter Student Name : 
-
-Std: 2.22
-Average: 4.25
-Minimum: 3
-Maximum: 5
-
-cGet average, standard deviation, minimum and maximum for a particular column, Enter column Name : 
-
-Y			------========== Student Grades Rubric For Column sampleStudent Only ==========------
-
-5Design - Implementation - Testing - Documentation - 
-!sampleStudent - 3 - 5 - 4 - 5 - 
-
-Std Deviation - 
-Mean / Average - 
-Minimum - 
-Maximum - 
-
+.Student with name sampleCriterion3 not found.
+
+Std: 3.16
+Average: 10
+Minimum: 10
+Maximum: 10
+
+2			------========== sampleRubric ==========------
+
+sampleCategory1 - 
+sampleCriterion1 - 10 - 
+sampleCriterion2 - 24 - 
+	
+	2			------========== sampleRubric ==========------
+	
+			           sampleCategory1
+	"sampleCriterion1	            10		
+
+R			------========== sampleRubric For Column sampleCategory1 Only ==========------
+
+sampleCategory1 - 
+sampleCriterion1 - 10 - 
+sampleCriterion2 - 24 - 
+
+Std Deviation - 8.12 - 
+Mean / Average - 17 - 
+Minimum - 10 - 
+Maximum - 24 - 
