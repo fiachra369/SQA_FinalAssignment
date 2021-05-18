@@ -131,5 +131,34 @@ to ensure that the code is clear and functional while also meeting all of the sp
 * There are only a few developers on the team who use TDD; everyone else should.
 * The test suite isn't kept up to date.
 
+## Test Coverage Metric
+
+Test coverage is a Black-box testing technique that measures the number of tests that have been run. Test cases are written to ensure that all requirements are covered to the fullest extent possible.
+The test coverage report gives details on which sections of the program are covered by test coverage.
+It essentially offers details about the tests that have been run inside an application.
+
+**How to perform Test coverage:**
+
+Different forms of testing may also be used to assess research coverage. The type of testing you do is determined by the application.
+I used unit tests in the sample software. I developed this software using the IntelliJ IDE, 
+which includes a test coverage method that I used.
+
+**How to use IntelliJ's Test Coverage Tool:**
+
+**Step 1:** Go to the class which you would like to test
+
+![Getting Started](https://i.postimg.cc/pybzyVNq/Screenshot-2021-05-18-at-13-08-58.png)
+
+
+**Step 2:** Go to the side and click the play button beside the main method and "Run with coverage"
+
+![Getting Started](https://i.postimg.cc/w1hS8jdZ/Screenshot-2021-05-18-at-13-09-23.png)
+
+
+**Step 3:** The Test Coverage Tool will then be shown to you. You can see all of the project's classes here.
+The tool tells you if you've covered the class, how many approaches you've covered, and how many lines you've covered.
+
+![Getting Started](https://i.postimg.cc/JGHfxQY1/Screenshot-2021-05-18-at-13-12-16.png)
+
 
    
