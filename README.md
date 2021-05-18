@@ -102,6 +102,34 @@ According to my calculation, the velocity for these 3 sprints is 6.3.
 To help visualize this, I have attached an image below which depicts a typical 3 sprint with a velocity metric.
 
 ![alt text](https://www.visual-paradigm.com/servlet/editor-content/scrum/what-is-scrum-velocity/sites/7/2018/11/scrum-verlocity-chart.png "`Velocity Example`")
-   
-   
+
+## Test Driven Development
+
+Test-driven development (TDD) is a programming technique that requires you to write a test that fails before writing 
+new functional code. Five basic steps make up the test-driven development 
+cycle, which are replicated during the software development life cycle. These measures are designed 
+to ensure that the code is clear and functional while also meeting all of the specifications.  
+
+**There are 5 different stages to TDD:**
+
+1. Add a test
+2. Run all tests and see if any new test fails
+3. Write some code
+4. Run tests and Refactor code
+5. Repeat
+
+**Here are some of the benefits of TDD:**
+
+*TDD helps you create trust in your system by ensuring that it meets the specifications that have been specified for it. 
+*You pass the coverage test with a score of 100 percent.
+
+**Common Errors in Test Driver Development:**
+
+* Frequently forgetting to run tests.
+* Trying to write so many exams at once.
+* Creating checks for simple code
+* There are only a few developers on the team who use TDD; everyone else should.
+* The test suite isn't kept up to date.
+
+
    
