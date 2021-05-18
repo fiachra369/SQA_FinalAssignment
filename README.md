@@ -160,5 +160,52 @@ The tool tells you if you've covered the class, how many approaches you've cover
 
 ![Getting Started](https://i.postimg.cc/JGHfxQY1/Screenshot-2021-05-18-at-13-12-16.png)
 
+## **Team Version Control**
+
+Version control is a method of tracking modifications to a file or collection of files over time so that you can 
+go back in time and remember specific versions.
+
+**Team Version Control Advantages**
+
+* Recognize who made a transition and when it occurred.
+* All team members use the same file names and directory structures.
+* Different versions of the code can be easily deployed to staging or production servers.
+* You can confidently make changes and undo them if you make a mistake.
+
+**Guidelines to follow**
+
+* Pay attention to commit messages, as they can explain why a change was made.
+* Make minor adjustments
+* Commit early and regularly to prevent merge conflicts.
+* Make sure your code compiles and your checks pass.
+* Update often and right before pushing.
+* Stick to agreed-upon conventions and workflows. 
+
+### **Branches In Use**
+
+**Master Branch**
+
+The master division is the project's main branch. This is where you'll find all of the production-ready code.
+
+**Develop branch**
+
+This branch contains the full history of the project's work. Since the build branch is the most recent version of the code, 
+it is used to construct all function branches in this project.
+All improvements should be merged back into master until the code in the develop 
+branch has reached a stable state and is ready to be published.
+
+**Feature Branches**
+
+Each new functionality should be assigned to its own branch, which can then be moved to the central repository for backup and collaboration.
+Feature branches should never branch off of master; instead, they should parent off of the parent branch.
+When a function is finished, it is integrated back into the build branch.
+
+
+
+
+
+
+
+
 
    
