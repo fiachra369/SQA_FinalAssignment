@@ -108,7 +108,7 @@ To help visualize this, I have attached an image below which depicts a typical 3
 Test-driven development (TDD) is a programming technique that requires you to write a test that fails before writing 
 new functional code. Five basic steps make up the test-driven development 
 cycle, which are replicated during the software development life cycle. These measures are designed 
-to ensure that the code is clear and functional while also meeting all of the specifications.  
+to ensure that the code is clear and functional while also meeting all the specifications.  
 
 **There are 5 different stages to TDD:**
 
@@ -130,6 +130,8 @@ to ensure that the code is clear and functional while also meeting all of the sp
 * Creating checks for simple code
 * There are only a few developers on the team who use TDD; everyone else should.
 * The test suite isn't kept up to date.
+
+![Getting Started](https://i.postimg.cc/NFxhN48t/test-driven-development-TDD.png)
 
 ## Test Coverage Metric
 
@@ -155,10 +157,118 @@ which includes a test coverage method that I used.
 ![Getting Started](https://i.postimg.cc/w1hS8jdZ/Screenshot-2021-05-18-at-13-09-23.png)
 
 
-**Step 3:** The Test Coverage Tool will then be shown to you. You can see all of the project's classes here.
+**Step 3:** The Test Coverage Tool will then be shown to you. You can see all the project's classes here.
 The tool tells you if you've covered the class, how many approaches you've covered, and how many lines you've covered.
 
 ![Getting Started](https://i.postimg.cc/JGHfxQY1/Screenshot-2021-05-18-at-13-12-16.png)
+
+## **Team Version Control**
+
+Version control is a method of tracking modifications to a file or collection of files over time so that you can 
+go back in time and remember specific versions.
+
+**Team Version Control Advantages**
+
+* Recognize who made a transition and when it occurred.
+* All team members use the same file names and directory structures.
+* Different versions of the code can be easily deployed to staging or production servers.
+* You can confidently make changes and undo them if you make a mistake.
+
+**Guidelines to follow**
+
+* Pay attention to commit messages, as they can explain why a change was made.
+* Make minor adjustments
+* Commit early and regularly to prevent merge conflicts.
+* Make sure your code compiles, and your checks pass.
+* Update often and right before pushing.
+* Stick to agreed-upon conventions and workflows. 
+
+### **Branches In Use**
+
+**Master Branch**
+
+The master division is the project's main branch. This is where you'll find all the production-ready code.
+
+**Develop branch**
+
+This branch contains the full history of the project's work. Since the build branch is the most recent version of the code, 
+it is used to construct all function branches in this project.
+All improvements should be merged back into master until the code in the develop 
+branch has reached a stable state and is ready to be published.
+
+**Feature Branches**
+
+Each new functionality should be assigned to its own branch, which can then be moved to the central repository for backup and collaboration.
+Feature branches should never branch off of master; instead, they should parent off of the parent branch.
+When a function is finished, it is integrated back into the build branch.
+
+## Code Reviews
+
+**What is a Code Review?**
+
+A code review is a procedure in which someone other than the code's author reviews it. 
+Code reviews are an important part of the software development process because they help to 
+minimize technical debt and ensure continuity in the codebase. Everyone makes mistakes when writing code, 
+but it's critical to catch them before they hit production and cause harm.
+
+**In the future**
+
+Your code review checklist, like your team's code style, can evolve over time. It's important to keep 
+updating your checklist as your code progresses, and you gain more experience to ensure 
+that it covers every aspect of your code.
+
+**Benefits of Code Reviews:**
+
+1. You notice bugs early on
+2. Stability of the team
+3. You teach and share your experience 
+4. Your design and execution are consistent.
+
+**What to do when reviewing a pull request**
+
+* **Naming**
+  Did the developer choose clear names for variables, classes, methods, etc.?
+    
+* **Tests**
+  Does the code have correct and well-designed tests?
+    
+* **Complexity**
+  Is the code more complex than it needs to be?
+    
+* **Design**
+  Is the code is well-designed?
+    
+* **Relevancy**
+  Is the developer implementing things they might need in the future but don’t know they need now?
+
+**Example**
+
+Here is an example ![Getting Started](https://i.postimg.cc/y8JtMssW/Screenshot-2021-05-18-at-14-46-10.png)
+
+* **Design:** The code is well designed.
+
+* **Functionality:** The code is supposed to get the minimum and max for a score
+
+* **Tests:** Thus, I created a min for the score test ![Getting Started](https://i.postimg.cc/wMCL3XyC/Screenshot-2021-05-18-at-14-49-01.png)
+
+* **Naming:** I looked at the names of the variables and methods to see if they matched their functions. The naming in this pull request is good because I understand what each variable means and what each class does.
+
+* **Complexity:** Since the task is straightforward, there is no need for complicated code, and the author avoided adding unnecessary complexity to the code.  
+
+* **Relevancy:** The author hasn't included any extra features that are not required for this task
+  
+
+
+
+
+
+
+
+
+
+
+
+
 
 
    
