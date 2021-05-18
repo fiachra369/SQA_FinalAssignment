@@ -126,7 +126,7 @@ to ensure that the code is clear and functional while also meeting all of the sp
 **Common Errors in Test Driver Development:**
 
 * Frequently forgetting to run tests.
-* Trying to write so many exams at once.
+* Trying to write so many tests at once.
 * Creating checks for simple code
 * There are only a few developers on the team who use TDD; everyone else should.
 * The test suite isn't kept up to date.
