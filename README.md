@@ -74,7 +74,34 @@ The fibonacci sequence is used when calculating the velocity metric at the end o
 the Sprint by totaling the Points for all fully completed User Stories. For example, if Create Student and Grade Student are completed, the total
 story points will be 2. The velocity metric is very useful to estimate how much backlog effort your team can handle in future sprints if your team composition and sprint duration stay constant.
 
+### **Calculating the Velocity Metric**
 
+Velocity is the amount of work a team completes in a certain amount of time.
+It can be measured in , number of tasks, story points and person-hours or a team desired way of measuring output.
+
+For example...
+
+I have 9 tasks which the team must complete. For the first sprint I plan to do the first 4 tasks. The total story points for these tasks is 6.
+For the first sprint I only get 4-story points completed, therefore my velocity for this sprint is 4. The remaining 2-story
+points are passed on over to the next sprint.
+
+In order to get an accurate velocity calculation I need to do more than one sprint. For the purpose of this example, I am going to do the first
+3 sprints. Below I have illustrated the sprints and how many story points I completed per sprint...
+
+* Sprint 1 - 4
+* Sprint 2 - 7
+* Sprint 3 - 10
+
+In order to get the velocity after the 3 sprints I must get the mean average.
+
+5 + 8 + 6 = 19
+19/3 = 6.33
+
+According to my calculation, the velocity for these 3 sprints is 6.3.
+
+To help visualize this, I have attached an image below which depicts a typical 3 sprint with a velocity metric.
+
+![alt text](https://www.visual-paradigm.com/servlet/editor-content/scrum/what-is-scrum-velocity/sites/7/2018/11/scrum-verlocity-chart.png "`Velocity Example`")
    
    
    
